@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="mario.css">
+	</head>
+	<body>
+		<div class="header">
+		<p class="title">Pyramid Slide</p>
+		</div>
+		<div class="field">
+			<div class="settings">
+				<form>
+					<span>Brick symbol:</span>
+					<select id="symbol">
+						<option>#</option>
+						<option>@</option>
+						<option>X</option>
+						<option>$</option>
+					</select>
+					<span>How high?</span>
+					<input id="heightRange" type="range" min="1" max="20" value="1">
+					<output id="height">1</output>
+				</form>
+			</div>
+			<div id="pyramid">
+			</div>
+		</div>
+		<script src="mario.js"></script>
+	</body>
+</html>

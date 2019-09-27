@@ -1,0 +1,53 @@
+body {
+  font-family: "Courier New", monospace;
+}
+
+.header {
+  height: 4em;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgb(189, 94, 152);
+  display: flex;
+  align-items: center;
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.title {
+  color: lightgrey;
+}
+
+.settings {
+  width: inherit;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  background-color: silver;
+  background-size: cover;
+}
+
+form {
+  margin: auto;
+}
+
+select {
+  margin: 0 35px 0 5px;
+}
+
+.field {
+  height: auto;
+  margin: 10px 70px;
+  text-align: center;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: rgb(189, 94, 152);
+  background-color: ghostwhite;
+  background-size: cover;
+}
+
+#pyramid {
+  height: auto;
+}
