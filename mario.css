@@ -50,4 +50,8 @@ select {
 
 #pyramid {
   height: auto;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(189, 94, 152);
+  line-height: 0;
 }
