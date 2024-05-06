@@ -9,8 +9,8 @@ let height = heightInput.value;
 drawPyramid(symbol, height);
 
 heightInput.addEventListener('input', (event) => {
-	output.value = event.targe.value;
-	height = event.targe.value;
+	output.value = event.target.value;
+	height = event.target.value;
   	drawPyramid(symbol, height);
 });
 
