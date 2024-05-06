@@ -9,6 +9,7 @@ let height = heightInput.value;
 drawPyramid(symbol, height);
 
 heightInput.addEventListener('input', (event) => {
+	console.log(event.target.value);
 	output.value = event.target.value;
 	height = event.target.value;
   	drawPyramid(symbol, height);
@@ -25,7 +26,9 @@ function drawPyramid(symbol, height) {
   	}
 	
   	if (height > 1) {
+		console.log(height);
 		for (let i = 1; i <= height + 1; i++) {
+			console.log(`draw ${i}`);
 			const p = document.createElement('p');
 			p.innerHTML = symbol.repeat(i);
 			parent.appendChild(p);
