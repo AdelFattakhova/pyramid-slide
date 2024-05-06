@@ -1,10 +1,10 @@
-var symbol = document.getElementById("symbol").value;
-var height = document.getElementById("heightRange").value;
+const symbol = document.getElementById("symbol").value;
+const height = document.getElementById("heightRange").value;
 
 drawPyramid(symbol, height);
 
 document.getElementById("heightRange").addEventListener("input", function() {
-  var output = document.getElementById("height");
+  const output = document.getElementById("height");
   output.value = this.value;
   height = this.value;
 });
@@ -19,22 +19,21 @@ document.getElementById("heightRange").addEventListener("input", function() {
 });
 
 function drawPyramid(symbol, height) {
-	var parent = document.getElementById('pyramid');
+	const parent = document.getElementById('pyramid');
   	while (parent.firstChild) {
-    	parent.removeChild(parent.firstChild);
+    		parent.removeChild(parent.firstChild);
   	}
 	
-  	if (height>1) {
-    	for (var i=2; i<=height+1; i++) {
-      		var result = '&nbsp;'.repeat(height-i+1) + symbol.repeat(i);
-      		var p = document.createElement('p');
-      		p.innerHTML = result;
-      		parent.appendChild(p);
-    	}
+  	if (height > 1) {
+    		for (let i = 1; i <= height + 1; i++) {
+	      		const p = document.createElement('p');
+	      		p.innerHTML = symbol.repeat(i);
+	      		parent.appendChild(p);
+    		}
   	}
-    else {
-    	var p = document.createElement('p');
-    	p.textContent = symbol;
-    	parent.appendChild(p);
-    }
+    	else {
+	    	const p = document.createElement('p');
+	    	p.textContent = symbol;
+	    	parent.appendChild(p);
+	}
 }
