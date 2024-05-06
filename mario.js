@@ -1,5 +1,5 @@
-const symbol = document.getElementById("symbol").value;
-const height = document.getElementById("heightRange").value;
+let symbol = document.getElementById("symbol").value;
+let height = document.getElementById("heightRange").value;
 
 drawPyramid(symbol, height);
 
