@@ -4,14 +4,14 @@ const output = document.getElementById('height');
 const parent = document.getElementById('pyramid');
 
 let symbol = symbolInput.value;
-let height = heightInput.value;
+let height = +heightInput.value;
 
 drawPyramid(symbol, height);
 
 heightInput.addEventListener('input', (event) => {
 	console.log(event.target.value);
-	output.value = event.target.value;
-	height = event.target.value;
+	output.textContent = event.target.value;
+	height = +event.target.value;
   	drawPyramid(symbol, height);
 });
 
